@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alef">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +13,7 @@
         }
 
         body{
+            font-family: 'Alef',sans-serif;
             direction: rtl;
             background: #f9b255;
         }
@@ -31,7 +33,27 @@
         .menu {
             background: #ffe7c2;
         }
-
+        .menu h3 {
+            padding-right: 10px;
+        }
+        .menu ul {
+            padding-right: 20px;
+        }
+        .menu li a {
+            color: #7a3d07;
+            text-decoration-line: none;
+        }
+        .menu li a:visited {
+            color: #b85c0b;
+            text-decoration-line: none;
+        }
+        .menu li a:hover {
+            color: #f89741;
+            text-decoration-line: underline;
+        }
+        .menu > div {
+            position: fixed;
+        }
         h1{
             margin-top: 0;
         }
@@ -41,20 +63,48 @@
             padding: 15px;
         }
 
+
     </style>
 </head>
 <body>
     <div id="page">
         <div class="menu">
-            menu
+            <div>
+                <h3>תפריט</h3>
+                <ul >
+                    <li>
+                        <a href="#kapy">
+                           קאפי
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#whois">
+                            מי זה קאפי
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#food">
+                            מה קאפי אוכל
+                        </a>
+                    </li>
+                   
+                    <li>
+                        <a href="#whois">
+                            מי זה 
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
         <div class="content">
-            <h1>קאפי</h1>
-            <h3>מי זה קאפי?!</h3>
+            <h1 id="kapy">קאפי</h1>
+
+            <h3 id="whois">מי זה קאפי?!</h3>
             <p>קאפי הוא ארנב בית שובב שאוהב חסה ואספסת. 
                 הוא חי בבית בתוך כלוב ענק ומשחררים אותו לטייל מידי פעם.
             </p>
-            <h3>מה קאפי אוהב לאכול?</h3>
+
+            <h3 id="food">מה קאפי אוהב לאכול?</h3>
             <ul>
                 <li>חסה</li>
                 <li>אספסת</li>
